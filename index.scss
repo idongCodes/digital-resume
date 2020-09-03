@@ -57,6 +57,65 @@ table {
 	border-spacing: 0;
 }
 // End Reset
+
+// Mobile View
+@media screen and (max-width: 501px) {
+   .resume-container {
+      .header {
+         h4 {
+            margin: 0 0 10px;
+            border-bottom: 3px solid white;
+         }
+      } // End Header
+
+      .content-container {
+         flex-direction: column-reverse;
+         // border: 1px dashed red;
+         padding: 0;
+
+         .main-content {
+            // border: 1px solid green;
+            width: 90% !important;
+
+            .education {
+               ul {
+                  flex-direction: column;
+                  // border: 1px dashed red;
+                  li {
+                     width: 100% !important;
+                  }
+               }
+            }
+         } // end main content
+
+         .sidebar {
+            // border: 1px dashed blue;
+            width: 90% !important;
+            margin: auto;
+            display: flex;
+            flex-direction: column-reverse;
+
+            .contact {
+               // border: 1px solid red;
+
+               p {
+                  margin-bottom: 18px !important;
+               }
+
+               .contact-links {
+                  // border: 1px dashed red;
+                  margin: 0;
+               }
+            }
+
+            .sidebar-div {
+               margin: 0 0 15px;
+            }
+         }
+      }
+   }
+} // End Mobile View
+
  h2 {
     font-size: $h2;
     letter-spacing: $h2Kern;
@@ -83,7 +142,7 @@ table {
  
  .resume-container {
     max-width: 1060px;
-    min-width: 1060px; 
+   //  min-width: 1060px; 
     margin: 15px auto 0;
     padding: 15px;
     font-family: $montserrat;

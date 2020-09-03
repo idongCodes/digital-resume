@@ -48,6 +48,40 @@ table {
   border-spacing: 0;
 }
 
+@media screen and (max-width: 501px) {
+  .resume-container .header h4 {
+    margin: 0 0 10px;
+    border-bottom: 3px solid white;
+  }
+  .resume-container .content-container {
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .resume-container .content-container .main-content {
+    width: 90% !important;
+  }
+  .resume-container .content-container .main-content .education ul {
+    flex-direction: column;
+  }
+  .resume-container .content-container .main-content .education ul li {
+    width: 100% !important;
+  }
+  .resume-container .content-container .sidebar {
+    width: 90% !important;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .resume-container .content-container .sidebar .contact p {
+    margin-bottom: 18px !important;
+  }
+  .resume-container .content-container .sidebar .contact .contact-links {
+    margin: 0;
+  }
+  .resume-container .content-container .sidebar .sidebar-div {
+    margin: 0 0 15px;
+  }
+}
 h2 {
   font-size: 2.8rem;
   letter-spacing: 3px;
@@ -73,7 +107,6 @@ h4 {
 
 .resume-container {
   max-width: 1060px;
-  min-width: 1060px;
   margin: 15px auto 0;
   padding: 15px;
   font-family: sans-serif, Montserrat;
