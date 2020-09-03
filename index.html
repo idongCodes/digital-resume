@@ -239,6 +239,14 @@
         <!--    End Main Content -->
         <div id="footer"></div>
     </div>
+
+    <script>
+        var copyrightYear = new Date().getFullYear();
+
+        var footer = document.querySelector("#footer");
+
+        footer.innerHTML = `<p style="text-align: center; font-size: .8rem;">copyright &copy; ${ copyrightYear }. All rights reserved. 👨🏾‍💻 Digital Resumé by <a href="https://twitter.com/idngessnio" target="_blank" style="text-decoration: none; color: rgb(0,71,171); font-weight: bolder;">idngessn.io</a>.</p>`;
+    </script>
 </body>
 
 </html>
